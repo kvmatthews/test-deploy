@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux'; // Import useDispatch
-import { loginSuccess } from '../../redux/userSlice'; // Import loginSuccess action
-import "./Login.css";
-import logo from "../../assets/Website Assets/Logo.png";
-import illustrasi from "../../assets/Website Assets/Illustrasi Login.png";
+import { loginSuccess } from '../redux/userSlice'; // Import loginSuccess action
+import logo from "../assets/Website Assets/Logo.png";
+import illustrasi from "../assets/Website Assets/Illustrasi Login.png";
 import { CiLock } from "react-icons/ci";
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 import { CiAt } from "react-icons/ci";

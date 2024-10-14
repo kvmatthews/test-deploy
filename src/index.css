@@ -2,4 +2,645 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Components Data Profil */
+
+/* Data Pribadi */
+
+.comp_data_pribadi{
+  display: flex;
+  gap: 220px;
+  margin: 40px auto;
+  max-width: max-content;
+}
+
+.beranda_user {
+  color: #393535;
+}
+
+.beranda_user img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.beranda_user h2 {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.beranda_saldo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: rgb(230, 230, 230);
+}
+
+.beranda_saldo h3 {
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.beranda_saldo h4 {
+  position: absolute;
+  left: 20px;
+  top: 56px;
+  font-size: xx-large;
+}
+
+.beranda_saldo h5 {
+  position: absolute;
+  left: 20px;
+  bottom: 27px;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Component Navigas */
+
+nav {
+  height: 60px;
+  border-bottom: rgb(222, 222, 222) 1.8px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.nav_logo a {
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo h1 {
+  padding-left: 7px;
+  font-size: 14px;
+}
+
+.nav_logo img {
+  width: 20px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding-right: 50px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(64, 64, 64);
+}
+
+a {
+  text-decoration: none;
+  color: #393535;
+}
+
+a.active {
+  color: red;
+}
+
+/* Login_Page */
+
+.halaman_login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Text */
+
+.sims_login_container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.konten_logo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.konten_logo h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #393535;
+}
+
+.logo{
+  display: flex;
+  margin: auto;
+}
+
+.logo h1{
+  padding: 5px;
+  font-size: larger;
+  color: #393535;
+  font-size: 18px;
+}
+
+/* Input Email & Password */
+
+.input_box{
+  margin-bottom: 30px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.input_box input{
+  width: 400px;
+  height: 50px;
+  padding-left: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.at_icon{
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  color: grey;
+}
+
+.lock_icon{
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  color: grey;
+}
+
+.eye_icon{
+  position: absolute;
+  top: 17px;
+  right: 12px;
+  cursor: pointer;
+  color: grey;
+}
+
+.tombol_masuk{
+  width: 400px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.tombol_masuk:hover {
+  background-color: #ff3434;
+}
+
+/* Illustrasi */
+
+.illustrasi_container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f1f1;
+}
+
+.illustrasi_img{
+  max-width: 80%;
+  height: auto;
+}
+
+.error_message_login{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.sims_login_container a {
+  color: red;
+}
+
+/* Register Page */
+
+.error_message_regis{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Home Page */
+
+.home_page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Services */
+
+.home_services{
+  margin: auto;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.service_item {
+  cursor: pointer;
+}
+
+.services_list p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #393535;
+  margin-top: 10px;
+  width: 70px;
+}
+
+/* Banner */
+
+.home_banner {
+  margin: auto;
+  width: 1100px;
+  margin-bottom: 100px;
+}
+
+.home_banner h4 {
+  color: #393535;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.banner_list{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.banner_item {
+  cursor: pointer;
+}
+
+.banner_item img {
+  width: 100%;
+}
+
+/* Services Page */
+
+.halaman_service {
+  margin: auto;
+  max-width: 1060px;
+}
+
+.halaman_service {
+  color: #393535;
+}
+
+.pembayaran_service{
+  display: flex;
+  flex-direction: column;
+}
+
+.nama_service {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #393535;
+}
+
+.nama_service img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.input_service_container {
+  position: relative;
+  display: flex;
+}
+
+.input_service_container input {
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1.8px solid rgb(182, 182, 182);
+  padding-left: 36px;
+  border-radius: 4px;
+}
+
+.cash_icon_service{
+  position: absolute;
+  top: 31.4px;
+  left: 12px;
+  color: gray;
+}
+
+.pembayaran_service button {
+  height: 40px;
+  background-color: rgb(255, 30, 30);
+  border-color: none;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
+}
+
+.pembayaran_service button:active {
+  background-color: #ff4747;
+}
+
+.halaman_service p {
+  margin-top: 10px;
+}
+
+/* Top Up Page */
+
+.halaman_topup {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.halaman_topup h4 {
+  color: #393535;
+}
+
+.halaman_topup h2 {
+  color: #393535;
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
+.topup_input {
+  display: flex;
+}
+
+.topup_information {
+  display: flex;
+  flex-direction: column;
+}
+
+.topup_information input {
+  height: 40px;
+  width: 600px;
+  margin-bottom: 16px;
+  padding-left: 36px;
+  border-radius: 4px;
+  border: 1.8px solid rgb(182, 182, 182);
+  font-weight: bold;
+  font-size: 12px;
+  color: #525252;
+}
+
+.topup_input_container{
+  display: flex;
+  position: relative;
+}
+
+.cash_icon {
+  position: absolute;
+  top: 11.4px;
+  left: 12px;
+  color: gray;
+}
+
+.topup_information button {
+  height: 40px;
+  background-color: rgb(179, 179, 179);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.konfirmasi_topup:not(:disabled) {
+  background-color: rgb(255, 30, 30);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.konfirmasi_topup:not(:disabled):active {
+  background-color: #ff4747;
+}
+
+.list_topup {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.list_topup button {
+  color: rgb(64, 64, 64);
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.list_topup button:active {
+  background-color: rgb(182, 182, 182);
+}
+
+.verification_message{
+  margin-top: 20px;
+  text-align: center;
+  color: #393535;
+}
+
+/* Transaction Page */
+
+.halaman_transaksi {
+  margin: auto;
+  max-width: 1060px;
+  display: flex;
+  flex-direction: column;
+}
+
+.halaman_transaksi h3 {
+  color: #393535;
+}
+
+.transaction_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.transaction_item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1.8px solid rgb(220, 220, 220);
+  padding: 12px 20px 10px 20px;
+  background-color: rgb(254, 254, 254);
+}
+
+.format_date {
+  margin-top: 6px;
+  color: gray;
+  font-size: 10px;
+}
+
+.transaction_description {
+  color: #797171;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+span[data-transaction-type="PAYMENT"] {
+  color: #ff4747;
+  font-weight: bold;
+}
+
+span[data-transaction-type="TOPUP"] {
+  color: rgb(38,177,112);
+  font-weight: bold;
+}
+
+.show_more {
+  background-color: white;
+  border: none;
+  max-width: max-content;
+  cursor: pointer;
+  color: #ff4747;
+  font-weight: bold;
+  margin: 20px auto 40px auto;
+}
+
+/* Account Page */
+
+.halaman_akun {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 40px auto;
+  align-items: center;
+}
+
+.profil_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profil_image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.image_container {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.image_container input {
+  display: none;
+}
+
+.edit_icon {
+  position: absolute;
+  padding: 4px;
+  bottom: -3px;
+  right: -6px;
+  border: solid 1.6px rgb(182, 182, 182);
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+  background-color: white;
+  color: #393535;
+}
+
+.profil_image h1 {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #393535;
+}
+
+.account_information {
+  color: #393535;
+  width: 100%;
+}
+
+.account_information h2 {
+  font-size: 12px;
+  color: #393535;
+  margin-bottom: 10px;
+}
+
+.account_information input {
+  width: 100%;
+  padding: 12px 0 12px 30px;
+  border: 1.8px solid rgb(182, 182, 182);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #393535;
+}
+
+.account_details {
+  margin-bottom: 24px;
+}
+
+.input_container {
+  display: flex;
+  position: relative;
+}
+
+.input_container span {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #393535;
+}
+
+.account_button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.account_button button {
+  padding: 11px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: rgb(255, 30, 30);
+  border: none;
+  font-size: 12px;
+  /* font-weight: bold; */
+  color: white;
+  transition: background-color 0.1s ease;
+}
+
+.account_button button:active {
+  border: rgb(255, 30, 30) 1.8px solid;
+  background-color: white;
+  color: rgb(255, 30, 30);
 }
